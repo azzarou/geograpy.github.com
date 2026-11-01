@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8">
+<title>8 международных организаций</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f1ea;--fg:#14202b;--mut:#4a5560;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e141a;--fg:#f4f1ea;--mut:#b9c0c7}}
+:root[data-theme="dark"]{--bg:#0e141a;--fg:#f4f1ea;--mut:#b9c0c7}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:'Manrope',system-ui,Arial,sans-serif;overflow-x:hidden}
+.hero{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:28px;padding:64px 24px}
+.hero h1{font-size:clamp(40px,8vw,104px);line-height:1.02;margin:0;font-weight:800;max-width:14ch}
+.hero p{margin:0;color:var(--mut);font-size:clamp(16px,2vw,24px)}
+.orb{position:relative;width:260px;height:260px;animation:sp 40s linear infinite}
+.orb>span{position:absolute;left:50%;top:50%;margin:-24px;width:48px;height:48px;font-size:34px;transform:rotate(var(--a)) translateX(110px) rotate(calc(-1*var(--a)))}
+.orb i{display:block;font-style:normal;animation:sp 40s linear infinite reverse}
+.hint{animation:bob 2s ease-in-out infinite}
+.au{font-size:clamp(16px,1.8vw,22px);line-height:1.6}
+section.o{min-height:100svh;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding:96px max(24px,6vw);background:var(--b);color:var(--f);overflow:hidden}
+.sc{color:var(--a);width:100%}
+.sc svg{width:100%;height:auto;display:block;max-height:70svh}
+.tx>*{opacity:0;transform:translateY(28px);transition:opacity .7s,transform .7s}
+.in .tx>*{opacity:1;transform:none}
+.in .tx>*:nth-child(2){transition-delay:.1s}.in .tx>*:nth-child(3){transition-delay:.2s}.in .tx>*:nth-child(4){transition-delay:.3s}.in .tx>*:nth-child(5){transition-delay:.45s}
+.tag{margin:0 0 12px;font-weight:800;letter-spacing:.14em;font-size:14px;color:var(--a)}
+h2{margin:0;font-size:clamp(44px,7vw,104px);line-height:1;font-weight:800}
+h2.long{font-size:clamp(34px,5.4vw,76px)}
+.full{margin:14px 0 0;font-size:clamp(18px,2vw,26px);opacity:.85;line-height:1.35}
+.big{display:flex;align-items:baseline;gap:16px;margin:28px 0 8px}
+.big b{font-size:clamp(56px,9vw,120px);line-height:1;color:var(--a);font-weight:800}
+.big span{font-size:clamp(16px,1.8vw,22px);opacity:.85;max-width:12ch}
+ul{list-style:none;padding:0;margin:12px 0 0;display:flex;flex-direction:column;gap:10px}
+li{border-left:4px solid var(--a);padding:6px 0 6px 16px;font-size:clamp(16px,1.7vw,21px);line-height:1.35;font-weight:600}
+nav{position:fixed;right:14px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:10px;z-index:5}
+nav a{width:12px;height:12px;border-radius:50%;background:#8a8f94;opacity:.7;border:2px solid rgba(255,255,255,.7);transition:.3s}
+nav a.on{background:#fff;transform:scale(1.5);opacity:1}
+footer{padding:64px 24px;text-align:center}
+@keyframes sp{to{transform:rotate(360deg)}}
+@keyframes dr{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes pl{0%,100%{transform:scale(1)}50%{transform:scale(1.9)}}
+@keyframes wv{to{transform:translateX(-100px)}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(8px)}}
+@keyframes sail{from{transform:translateX(-90px)}to{transform:translateX(430px)}}
+@keyframes fall{from{transform:translateY(-10px)}to{transform:translateY(300px)}}
+@keyframes tw{0%,100%{opacity:.2}50%{opacity:1}}
+@keyframes dft{from{transform:translateX(-120px)}to{transform:translateX(480px)}}
+@keyframes aur{0%,100%{transform:translateX(-20px) scaleY(1);opacity:.5}50%{transform:translateX(30px) scaleY(1.4);opacity:.9}}
+@keyframes sw{0%,100%{transform:translateX(-14px)}50%{transform:translateX(14px)}}
+@keyframes dsh{to{stroke-dashoffset:-40}}
+.dr{stroke-dasharray:1;stroke-dashoffset:1;animation:dr 2.6s ease-in-out infinite alternate}
+.pl{transform-box:fill-box;transform-origin:center;animation:pl 2.4s ease-in-out infinite}
+.bob{animation:bob 3s ease-in-out infinite}
+.tw{animation:tw 3s ease-in-out infinite}
+@media (max-width:800px){section.o{grid-template-columns:1fr;gap:24px;padding:72px 20px 56px}nav{display:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.tx>*{opacity:1;transform:none}}
+</style></head><body>
+<nav id="nav" aria-label="Разделы"></nav>
+<header class="hero">
+<div class="orb" id="orb" aria-hidden="true"></div>
+<h1>8 организаций, которые связывают мир</h1>
+<p>Торговля, энергия, море, реки, лёд, небо и Арктика</p>
+<p class="au"><b>Подготовили:</b><br>Султанкулов Ариет, Галуничев Матвей,<br>Субанбеков Кутман, Артыкбаев Эльмирбек</p>
+<p class="hint">Листайте вниз ↓</p>
+</header>
+<main id="m"></main>
+<footer><p class="au">Султанкулов Ариет · Галуничев Матвей · Субанбеков Кутман · Артыкбаев Эльмирбек</p></footer>
+<script>
+const R=i=>{const x=Math.sin(i*12.9898)*43758.5453;return x-Math.floor(x)};
+const V=(l,c)=>`<svg viewBox="0 0 400 300" role="img" aria-label="${l}">${c}</svg>`;
+const wave=(y,amp,ph)=>{let d=`M-100 ${y}`;for(let x=-100;x<=500;x+=10)d+=` L${x} ${(y+Math.sin((x+ph)/100*6.283)*amp).toFixed(1)}`;return d+' L500 300 L-100 300Z'};
+const O=[
+{e:'🌍',tag:'ТОРГОВЛЯ',s:'AfCFTA',full:'Африканская континентальная зона свободной торговли',n:54,u:'страны подписали соглашение',f:['Цель: единый рынок для всей Африки','Меньше пошлин — больше торговли внутри континента','Международная торговля и экономика Африки'],b:'#231506',c:'#f4eadb',a:'#f2a33a',
+ sc(){const p=[];for(let i=0;i<18;i++){const t=i/18*6.283,r=50+55*R(i+1);p.push([200+Math.cos(t)*r*.9,150+Math.sin(t)*r*1.15])}p.push([200,150]);let l='',k=0;p.slice(0,18).forEach((q,i)=>[(i+1)%18,(i+5)%18,18].forEach(j=>{l+=`<line x1="${q[0]}" y1="${q[1]}" x2="${p[j][0]}" y2="${p[j][1]}" pathLength="1" class="dr" stroke="currentColor" stroke-width="1.4" style="animation-delay:${(k++*.07).toFixed(2)}s"/>`}));return V('Сеть связей между странами Африки',l+p.map((q,i)=>`<circle class="pl" cx="${q[0]}" cy="${q[1]}" r="${i==18?7:4}" fill="currentColor" style="animation-delay:${i*.15}s"/>`).join(''))}},
+{e:'☀️',tag:'ЧИСТАЯ ЭНЕРГИЯ',s:'IRENA',full:'Международное агентство по возобновляемой энергии',n:2009,u:'год основания',f:['Штаб-квартира в Абу-Даби','Солнце, ветер, вода и другая чистая энергия','Помогает странам переходить на возобновляемые источники'],b:'#0d2a1b',c:'#eaf6ee',a:'#ffd23f',
+ sc(){let r='';for(let i=0;i<12;i++)r+=`<line x1="100" y1="40" x2="100" y2="58" stroke="currentColor" stroke-width="5" stroke-linecap="round" transform="rotate(${i*30} 100 90)"/>`;const bl=[0,120,240].map(a=>`<path d="M290 130 L284 80 Q290 62 296 80Z" fill="#eaf6ee" transform="rotate(${a} 290 130)"/>`).join('');return V('Солнце и ветряная турбина',`<g style="transform-origin:100px 90px;animation:sp 14s linear infinite">${r}</g><circle cx="100" cy="90" r="28" fill="currentColor"/><path d="M286 270 L290 130 L294 270Z" fill="#cfe7d8"/><g style="transform-origin:290px 130px;animation:sp 3.5s linear infinite">${bl}</g><circle cx="290" cy="130" r="6" fill="#eaf6ee"/><g fill="#1e6b8f" stroke="#7fd1ee" stroke-width="2"><path d="M30 270 l60 0 l-12 -34 l-60 0z"/><path d="M110 270 l60 0 l-12 -34 l-60 0z"/></g><path class="tw" d="M50 240 l20 0" stroke="#fff" stroke-width="3"/>`)}},
+{e:'🌊',tag:'МОРЕ И ТОРГОВЛЯ',s:'IORA',full:'Ассоциация стран Индийского океана',n:23,u:'страны-члена',f:['Создана в 1997 году','Торговля и морское сотрудничество','Безопасность судоходства в регионе'],b:'#06223a',c:'#e6f4fb',a:'#35c2e8',
+ sc(){return V('Волны и корабль в океане',`<circle cx="310" cy="70" r="30" fill="#ffd9a0"/><g style="animation:sail 14s linear infinite"><g class="bob"><path d="M0 150 L60 150 L50 168 L10 168Z" fill="#e6f4fb"/><path d="M30 148 L30 100 L52 148Z" fill="#35c2e8"/><rect x="28" y="96" width="3" height="52" fill="#e6f4fb"/></g></g><g><path d="${wave(170,8,0)}" fill="#0f5a85" opacity=".9" style="animation:wv 4s linear infinite"/><path d="${wave(200,10,50)}" fill="#0a456a" style="animation:wv 6s linear infinite"/><path d="${wave(235,10,20)}" fill="#06324f" style="animation:wv 9s linear infinite"/></g>`)}},
+{e:'🚆',tag:'ЭКОНОМИКА И ТРАНСПОРТ',s:'CAREC',full:'Программа Центральноазиатского регионального экономического сотрудничества',n:11,u:'стран-участниц',f:['Запущена в 1997 году','Транспортные коридоры и торговля','Связывает Центральную Азию с Азией и Европой'],b:'#1b1830',c:'#f2eefb',a:'#ff7a59',
+ sc(){const w=[0,1,2].map(i=>`<rect x="${-110+i*-52}" y="214" width="46" height="26" rx="5" fill="#f2eefb"/><rect x="${-102+i*-52}" y="220" width="10" height="9" fill="#1b1830"/><rect x="${-84+i*-52}" y="220" width="10" height="9" fill="#1b1830"/>`).join('');return V('Поезд едет через горы Центральной Азии',`<polygon points="0,230 60,140 110,200 170,100 240,200 300,130 400,230" fill="#2c2750"/><polygon points="170,100 150,125 170,118 185,128" fill="#f2eefb" opacity=".8"/><polygon points="0,240 90,175 160,240" fill="#3a3366"/><line x1="0" y1="246" x2="400" y2="246" stroke="#8c86b8" stroke-width="3"/><line x1="0" y1="256" x2="400" y2="256" stroke="currentColor" stroke-width="4" stroke-dasharray="6 10" style="animation:dsh 1s linear infinite"/>${[60,200,340].map((x,i)=>`<circle class="pl" cx="${x}" cy="282" r="5" fill="currentColor" style="animation-delay:${i*.5}s"/>`).join('')}<g style="animation:sail 8s linear infinite"><g transform="translate(110 0)"><rect x="0" y="210" width="60" height="30" rx="6" fill="currentColor"/><rect x="40" y="216" width="14" height="10" fill="#1b1830"/>${w}</g></g>`)}},
+{e:'🚢',tag:'РЕКИ И ПЕРЕВОЗКИ',s:'Дунайская комиссия',long:1,full:'Международные речные перевозки и судоходство по Дунаю',n:10,u:'стран на берегах реки',f:['Комиссия работает с 1948 года, штаб в Будапеште','Следит за свободой судоходства','Дунай — главная речная магистраль Европы'],b:'#0b2a29',c:'#e8f6f2',a:'#5ee0b0',
+ sc(){const d='M-10 70 C90 10 130 130 210 100 S330 60 300 170 S190 250 410 250';return V('Река Дунай с корабликом и городами',`<path id="rv" d="${d}" fill="none" stroke="#134a47" stroke-width="22" stroke-linecap="round"/><path d="${d}" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" pathLength="1" class="dr"/><g id="ct"></g><g><polygon points="14,0 -12,-9 -12,9" fill="#e8f6f2"><animateMotion dur="9s" repeatCount="indefinite" rotate="auto"><mpath href="#rv"/></animateMotion></polygon></g>`)},
+ post(el){const p=el.querySelector('#rv'),L=p.getTotalLength(),g=el.querySelector('#ct');[['Вена',.2],['Будапешт',.5],['Белград',.78]].forEach(([n,t])=>{const q=p.getPointAtLength(L*t);g.insertAdjacentHTML('beforeend',`<circle class="pl" cx="${q.x}" cy="${q.y}" r="5" fill="#e8f6f2"/><text x="${q.x+10}" y="${q.y-12}" fill="#e8f6f2" font-size="14" font-weight="700">${n}</text>`)})}},
+{e:'🐧',tag:'ОХРАНА ПРИРОДЫ',s:'CCAMLR',full:'Комиссия по сохранению морских живых ресурсов Антарктики',n:1982,u:'год создания',f:['Офис в Хобарте (Австралия)','Защищает морскую экосистему Антарктики','Регулирует вылов криля и рыбы'],b:'#e6f0f7',c:'#0b2540',a:'#1769aa',
+ sc(){let s='';for(let i=0;i<34;i++)s+=`<circle cx="${R(i+3)*400}" cy="0" r="${1.5+R(i)*2.5}" fill="#fff" stroke="#9cc3e0" stroke-width=".6" style="animation:fall ${4+R(i+9)*5}s linear ${-R(i+5)*8}s infinite"/>`;let k='';for(let i=0;i<9;i++)k+=`<g style="animation:sw ${3+R(i)*3}s ease-in-out ${-i}s infinite"><ellipse cx="${50+R(i+2)*300}" cy="${215+R(i+7)*65}" rx="8" ry="3" fill="#f07a5a"/><circle cx="${42+R(i+2)*300}" cy="${215+R(i+7)*65}" r="1.5" fill="#0b2540"/></g>`;return V('Айсберг, пингвин и криль в Южном океане',`<rect y="170" width="400" height="130" fill="#7fb4dc"/><rect y="215" width="400" height="85" fill="#4f8fc2" opacity=".7"/><g class="bob"><polygon points="120,175 160,105 190,135 225,85 275,175" fill="#fff"/><polygon points="225,85 275,175 235,175" fill="#cfe3f3"/><polygon points="120,175 275,175 245,225 150,225" fill="#b9d8ee" opacity=".8"/><text x="196" y="132" font-size="34" class="bob">🐧</text></g>${k}${s}`)}},
+{e:'✈️',tag:'АВИАЦИЯ',s:'ICAO',full:'Международная организация гражданской авиации',n:193,u:'государства',f:['Агентство ООН, основано в 1944 году','Стандарты безопасности полётов','Штаб-квартира в Монреале'],b:'linear-gradient(#2160b8,#0a1c44)',c:'#f1f6ff',a:'#ffcf5a',
+ sc(){const cl=[[40,70,1],[250,40,.7],[330,110,.9]].map(([x,y,s],i)=>`<g style="animation:dft ${30+i*9}s linear ${-i*10}s infinite"><g transform="translate(${x-40} ${y}) scale(${s})" fill="#fff" opacity=".85"><ellipse cx="30" cy="12" rx="30" ry="10"/><circle cx="22" cy="6" r="11"/><circle cx="40" cy="5" r="9"/></g></g>`).join('');const d='M30 250 Q200 -30 370 250';return V('Самолёт летит из одного аэропорта в другой',`${cl}<path id="fl" d="${d}" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="4 10" stroke-linecap="round" style="animation:dsh 1.2s linear infinite"/>${[30,370].map((x,i)=>`<circle class="pl" cx="${x}" cy="250" r="6" fill="currentColor" style="animation-delay:${i*1.1}s"/>`).join('')}<g><path d="M20 0 L-14 -12 L-7 0 L-14 12Z" fill="#f1f6ff"><animateMotion dur="7s" repeatCount="indefinite" rotate="auto"><mpath href="#fl"/></animateMotion></path></g>`)}},
+{e:'🐻‍❄️',tag:'АРКТИКА',s:'Арктический совет',long:1,full:'Сотрудничество государств Арктики',n:8,u:'арктических государств',f:['Основан в 1996 году (Оттавская декларация)','Охрана природы и устойчивое развитие Арктики','Коренные народы — постоянные участники совета'],b:'#050816',c:'#eaf3ff',a:'#6dffb3',
+ sc(){let st='';for(let i=0;i<46;i++)st+=`<circle class="tw" cx="${R(i)*400}" cy="${R(i+50)*190}" r="${.6+R(i+9)*1.4}" fill="#fff" style="animation-delay:${-R(i+3)*3}s"/>`;const au=[['#6dffb3',90,0],['#4aa8ff',120,1.5],['#b07cff',150,3]].map(([c,y,dl])=>`<ellipse cx="200" cy="${y}" rx="190" ry="26" fill="${c}" filter="url(#bl)" style="animation:aur 7s ease-in-out ${-dl}s infinite;transform-origin:200px ${y}px"/>`).join('');const dots=[...Array(8)].map((_,i)=>`<circle cx="${200+Math.cos(i*.7854)*70}" cy="${215+Math.sin(i*.7854)*18}" r="5" fill="currentColor"/>`).join('');return V('Северное сияние над Арктикой',`<defs><filter id="bl"><feGaussianBlur stdDeviation="14"/></filter></defs>${st}${au}<polygon points="0,300 0,235 70,205 130,235 200,195 280,235 340,210 400,240 400,300" fill="#dcecff"/><polygon points="200,195 280,235 200,235" fill="#a9c8ea"/><ellipse cx="200" cy="215" rx="70" ry="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 5"/><g style="transform-origin:200px 215px;animation:sp 12s linear infinite">${dots}</g>`)}}
+];
+const M=document.getElementById('m'),N=document.getElementById('nav'),OR=document.getElementById('orb');
+O.forEach((o,i)=>{
+ M.insertAdjacentHTML('beforeend',`<section class="o" id="o${i+1}" style="--b:${o.b};--f:${o.c};--a:${o.a}"><div class="sc">${o.sc()}</div><div class="tx"><p class="tag">0${i+1} / 08 · ${o.tag}</p><h2 class="${o.long?'long':''}">${o.s}</h2><p class="full">${o.full}</p><div class="big"><b data-n="${o.n}">0</b><span>${o.u}</span></div><ul>${o.f.map(x=>`<li>${x}</li>`).join('')}</ul></div></section>`);
+ if(o.post)o.post(document.getElementById('o'+(i+1)));
+ N.insertAdjacentHTML('beforeend',`<a href="#o${i+1}" aria-label="${o.s}" title="${o.s}"></a>`);
+ OR.insertAdjacentHTML('beforeend',`<span style="--a:${i*45}deg"><i>${o.e}</i></span>`);
+});
+const cnt=b=>{const n=+b.dataset.n,t0=performance.now();(function f(t){const k=Math.min(1,(t-t0)/1400);b.textContent=Math.round(n*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(f)})(t0)};
+const dots=[...N.children];
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const s=e.target;if(!s.classList.contains('in')){s.classList.add('in');cnt(s.querySelector('b'))}dots.forEach((d,i)=>d.classList.toggle('on','o'+(i+1)==s.id))}}),{threshold:.4});
+document.querySelectorAll('section.o').forEach(s=>io.observe(s));
+</script></body></html>
